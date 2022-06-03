@@ -1,0 +1,116 @@
+/* -------------------  MOBILE  --------------------- */
+@import './resets.css';
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+header {
+  background-color: rgb(10, 179, 150);
+  font-weight: bold;
+  padding: 1em;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.tab-container{
+  margin-top: 70px;
+  display: flex;
+  background: #fff;
+  justify-content: space-around;
+  position: sticky;
+}
+
+.tab{
+  padding: 1em;
+  margin-bottom: 0;
+  width: 100%;
+  font-weight: bold;
+  font-size: 0.8em;
+  background: rgb(241, 190, 207);
+}
+
+.tab.active {
+  background: rgb(67, 50, 131);
+  border-bottom: 6px solid rgb(27, 32, 102);
+}
+
+.tab:hover {
+  cursor: pointer;
+  background: rgb(218, 136, 170);
+}
+
+.tab:active {
+  background: palevioletred;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.info-container {
+  background: rgb(246, 201, 201);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+}
+
+.info-container figure {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+strong {
+font-size: 1.5em;
+color: rgb(102, 31, 6);
+}
+
+.image-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.main-rover-img{
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.image-card{
+  width: 100%;
+  max-width: 500px;
+  padding: 1em;
+  border-radius: 6px;
+  background: rgb(246, 201, 201);
+  margin: 1em auto;
+}
+
+.rover-image {
+  width: 100%;
+  height: auto;
+}
+
+/* -------------------  TABLET and Desktop --------------------- */
+@media (min-width: 768px) {
+  /* use mobile */
+  .tab{
+    font-size: 1.2em;
+  }
+
+  .info-container {
+    flex-wrap: nowrap;
+  }
+
+}
